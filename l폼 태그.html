@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>웹 사이트 제목</title>
+
+    </head>
+    <body>
+        <form name="fname" action="sign.jsp" method="post">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" value="신석민" size="21"><br>
+            <select id="food" name="food" multiple>
+                <optgroup label="음식">
+                    <option value="pizza" selected>피자</option>
+                    <option value="hamburger" selected>햄버거</option>
+                    <option value="pasta" selected>파스타</option>
+                </optgroup>
+                <optgroup label="후식">
+                    <option value="cola" selected>콜라</option>
+                    <option value="coffee" selected>커피</option>
+                    <option value="icecream" selected>아이스크림</option>
+                </optgroup>
+            </select><br>
+            <textarea name="articel" rows="5" cols="10">텍스트</textarea><br>
+            <button>Button</button>
+            <fieldset>
+                <legend>개인정보</legend>
+                <label for="name">이름</label><br>
+                <input type="text" id="name" name="name" value="신석민"><br>
+                <lable for="affiliation">소속</lable><br>
+                <input type="text" id="affiliation" name="affiliation" value="우리집"><br><br>
+                <input type="submit" value="전송">
+            </fieldset>
+
+        </form>
+    </body>
+</html>
