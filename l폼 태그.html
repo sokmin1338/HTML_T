@@ -1,36 +1,79 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>웹 사이트 제목</title>
-
     </head>
     <body>
-        <form name="fname" action="sign.jsp" method="post">
+        <form action="http://localhost/login.php"method="post">
+            <!--아이디랑 패스워드 주소를 http://localhost/login.php로
+        보내주세요 -->
+        <p>아이디:<input type="text" name="id"></p>
+        <p>비밀번호:<input type="password" name="password"></p>
+        <p>주소:<input type="text" name=address></p>
+        </form>
+    </body>
+</html>
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+<html>
+    <head>
+        <title>웹 사이트 제목</title>
+    </head>
+    <body>
+        <form name="fname" action="sing.jsp" method="post"><br>
             <label for="name">이름</label>
-            <input type="text" id="name" name="name" value="신석민" size="21"><br>
-            <select id="food" name="food" multiple>
-                <optgroup label="음식">
+            <input type="text" id="name" name="name" value="Sokmin" size="20">
+            <select id="food" name="food">
+                <optgroup label="음식"><br>
                     <option value="pizza" selected>피자</option>
                     <option value="hamburger" selected>햄버거</option>
                     <option value="pasta" selected>파스타</option>
                 </optgroup>
-                <optgroup label="후식">
-                    <option value="cola" selected>콜라</option>
-                    <option value="coffee" selected>커피</option>
-                    <option value="icecream" selected>아이스크림</option>
-                </optgroup>
             </select><br>
-            <textarea name="articel" rows="5" cols="10">텍스트</textarea><br>
-            <button>Button</button>
+            <textarea name="sokmin" rows="20" cols="30">어렵다</textarea><br>
+            <button>전송</button> <!--실제로 전송시켜줌-->
             <fieldset>
-                <legend>개인정보</legend>
-                <label for="name">이름</label><br>
-                <input type="text" id="name" name="name" value="신석민"><br>
-                <lable for="affiliation">소속</lable><br>
-                <input type="text" id="affiliation" name="affiliation" value="우리집"><br><br>
+                <legend>개인정보</legend> <!--caption-->
+                <lable for="name">이름</lable>
+                <input type="text" id="name" name="name" value="sokmin"><br>
+                <label for="affiliation">소속:</label>
+                <input type="text" id="affiliation" name="affiliation" value="bils"><br><br>
                 <input type="submit" value="전송">
             </fieldset>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="chrome"></option>
+                <option value="Firefox"></option>
+                <option value="Internet Explorer"></option>
+                <option value="Opera"></option>
+                <option value="Safari"></option>
+            </datalist>
+            
 
+        </form>
+        <form oninput="r.value=parseInt(x.value) * parseInt(y.value)">
+            <input type="number" id="x" name="x" value="10">
+            x
+            <input type="number" id="y" name="y" value="20">
+            =
+            <output name="r" for="x y"></output>
+            <br><br>
+            <input type="submit">
         </form>
     </body>
 </html>
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+### 폼 관련 태그 ###
+<pre>
+input : 입력 제어
+textarea : 여러줄의 입력
+label : input 요소의 라벨
+fieldset : 폼에 관련 요소
+legend : fieldset 요소의 캡션
+select : 드롭다운 리스트
+optgroup : 드롭다운 목록에서 관련 옵선 그룹
+option : 드롭다운 목록에서 옵션
+button : 버튼
+datalist : 입력 제어에 대해 미리 정의된 옵션 리스트
+output : 계산결과
+</pre>
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
