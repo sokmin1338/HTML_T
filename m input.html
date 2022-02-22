@@ -16,7 +16,7 @@
             <input type="checkbox" name="food" value="pizza">피자
             <input type="checkbox" name="food" value="hamburger">햄버거
             <input type="checkbox" name="food" value="pasta">파스타<br><br>
-            <input type="date" name="date" min="2020-01-01" max="2020=21-31"><br><br>
+            <input type="date" name="date" min="2020-01-01" max="2020-21-31"><br><br>
             <input type="month" id="month" name="month"><br><br>
             <input type="week" id="week" name="week"><br><br>
             <input type="time" id="time" name="time"><br><br>
@@ -27,10 +27,76 @@
             <input type="email" name="email"><br><br>
             <input type="url" name="url"><br><br>
             <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"><br><br>
-            <input type="file" id="myfile" name="myfile">
+            <input type="file" id="myfile" name="myfile"><br>
+            <input type="submit" value="전송">
+            <input type="reset" value="초기화">
         </form>
     </body>
 </html>
 
 
 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+input 태그를 form ~ /form 내부에서 사용되며 type 속성에 데이터 입력 양식 지정
+주요 공통 속성
+* readonly : 읽기 전용
+* disabled : 비활성화
+* autocomplete : 자동완성
+* autofocus : 웹 페이지 로드시 초기에 포커싱 설정
+* placeholder : 입력 폼에 희미하게 설명을 보여줌
+* required : 필수 속성
+* spellcheck : 오타 점검
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+[date, number, range = min, max 사용]
+
+* text : 텍스트 입력에 사용
+* password : 비밀번호 사용
+* button : 버튼 모양에 사용 <input type="button" value="button">
+
+* radio : 여러 개의 항목 중에서 하나를 선택할 때 사용
+<input type="radio" name="gender" value="male">남자
+<input type="radio" name="gender" value="female">여자
+
+
+* checkbox : 여러 개의 항목 중에서 여러개를 선택할 때 사용
+<input type="checkbox" name="food" value="vitamin C">비타민 C
+<input type="checkbox" name="food" value="vitamin B">비타민 B
+<input type="checkbox" name="food" value="vitamin A">비타민 D
+
+* date : 날짜를 입력할 때 사용되며
+<input type="date" name="date" min="2022-01-01" max="2020-12-31">
+
+* month : 월과 년도를 입력할 때 사용
+<input type="month" name="month">
+
+* week : 주를 입력할 때 사용
+<input type="week" id="week" name="week">
+
+* time : 시간을 입력할 때 사용
+<input type="time" id="time" name="time">
+
+* datetime-local : 날짜/시간을 입력할 때 사용
+<input type="datetime-local" id="datetime" name="datetime">
+
+* color : 색상을 선택할 때 사용
+<input type="color" name="color">
+
+* number : 숫자를 입력할 때 사용
+<input type="number" name="number" min="0" max="100">
+
+* range : 범위를 지정할 때 사용
+<input type="range" name="point" min="0" max="100">
+
+* email : eamil을 입력할 때 사용, 이메일 형식을 자동 체킹
+<input type="email" name="email">
+
+* tel : 전화번호 입력에 사용
+<input type="tel" id="phone=" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
+
+* file : 파일 선택에 사용
+<input type="file" id="myfile" name="myfile">
+
+* submit : 정보 전송
+<input type="submit" value="전송">
+
+* reset : 정보 초기화
+<input type="reset" value="초기화">
