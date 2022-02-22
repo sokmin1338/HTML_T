@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>회원가입 폼 예제</title>
+    </head>
+    <body>
+        <form name="signUp" action="singUp.PHP" method="post">
+            <fieldset width="500px" height="600px">
+                <legend>회원가입</legend>
+                아이디: <input type="text" name="id" placeholder="아이디를 입력 해주십시오" required>
+                <button type="button" onclick="alert('사용 가능한 이이디 입니다')">아이디 확인</button><br><br>
+                비밀번호 : <input type="password" placeholder="8글자 이상 입력 해주십시오" required><br><br>
+                생년월일 : <input type="date" name="birthday"><br><br>
+                이메일 : <input type="email" name="email" placeholder="이메일을 기입해주십시오" required><br><br>
+                사이트를 알게된 경로<br>
+                <input type="checkbox" name="a" vlaue="serch">검색
+                <input type="checkbox" name="a" value="friend">친구
+                <input type="checkbox" name="a" value="recommend">추천
+                <input type="checkbox" name="a" value="adv">광고
+                <input type="checkbox" name="a" value="ect">기타
+            </fieldset>
+            <button type="submit">회원가입</button>
+            <button type="reset">전부 다시 입력</button>
+        </form>
+    </body>
+</html>
