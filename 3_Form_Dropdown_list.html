@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action="http://localhost/color.php" method="post">
+            <h1>색상</h1>
+            <select name="color">
+                <option value="red">붉은색</option>
+                <option value="black">검은색</option>
+                <option value="blue">파란색</option>
+            </select>
+            <h1>색상2(다중선택)</h1>
+            <select name="color2" multiple>
+                <option value="red">붉은색</option>
+                <option value="black">검은색</option>
+                <option value="blue">파란색</option>
+            </select>
+            <input type="submit" value="선택">
+        </form>
+    </body>
+</html>
+
+
+
+select : dorpdownlist 생성 <option></option> 과 함께 사용해야 됨
+
+value : 컴퓨터 가 좋아하는 언어로 정의할 때, input 정의할 때, 실제로 전송되는 데이터 !
